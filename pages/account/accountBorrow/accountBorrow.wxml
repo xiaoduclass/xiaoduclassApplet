@@ -1,0 +1,37 @@
+<view class="account-borrow">
+  <view class="account-borrow-label">
+    <view class="account-borrow-label-item">借出</view>
+    <view class="account-borrow-label-item">已完成</view>
+  </view>
+  <view class="account-borrow-total">
+    <view>
+      <view class="account-borrow-total-number">1.00</view>
+      <view class="account-borrow-total-text">还应还款</view>
+    </view>
+  </view>
+  <view class="account-borrow-items">
+    <image class="account-borrow--items-image"></image>
+    <view class="account-borrow--items-description">
+      <view>XXX - 我</view>
+      <view class="account-borrow-items-overdue">已逾期</view>
+    </view>
+    <view class="account-borrow--items-money">
+      <view>1.00</view>
+      <view class="account-borrow-items-received">已收：0.00</view>
+    </view>
+  </view>
+  <view class="account-borrow-items">
+    <image class="account-borrow--items-image"></image>
+    <view class="account-borrow--items-description">
+      <view>XXX - 我</view>
+      <view class="account-borrow-items-overdue">已逾期</view>
+    </view>
+    <view class="account-borrow--items-money">
+      <view>1.00</view>
+      <view class="account-borrow-items-received">已收：0.00</view>
+    </view>
+  </view>
+  <view class="account-borrow-button">
+    <view>新增借出</view>
+  </view>
+</view>

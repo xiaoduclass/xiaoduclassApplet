@@ -1,0 +1,27 @@
+<view>
+  <view wx:if="{{ accountTypeId == 1 || accountTypeId == 2 || accountTypeId == 4 || accountTypeId == 5 }}" class="account-header">
+    <image class="account-header-image" src="../../../resources/bank/{{ accountCardCode }}.png"></image>
+    <view class="account-header-text">{{ accountCard }}</view>
+  </view>
+  <view>
+    <view class="account-edit">
+      <text class="account-edit-text">账户名称</text>
+      <input class="account-edit-input" model:value="{{ accountName }}" placeholder="账户名称"/>
+    </view>
+    <view wx:if="{{ accountTypeId == 1 || accountTypeId == 2 }}" class="account-edit">
+      <text class="account-edit-text">银行卡号</text>
+      <input class="account-edit-input" model:value="{{ accountCardNumber }}" placeholder="卡号后四位"/>
+    </view>
+    <view class="account-edit">
+      <text class="account-edit-text">余额</text>
+      <input type="digit" class="account-edit-input" model:value="{{ accountBalance }}" placeholder="0.00"/>
+    </view>
+    <view class="account-edit">
+      <text class="account-edit-text">备注</text>
+      <input type="digit" class="account-edit-input" model:value="{{ remark }}" auto-focus placeholder="备注"/>
+    </view>
+    <view class="account-save" bindtap="handleSaveAccount">
+      <text>完成</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,92 @@
+.my-header {
+  position: absolute;
+  width: 100%;
+}
+
+.my-header-image {
+  height: 300rpx;
+  width: 100%;
+}
+
+.my-header-concent {
+  position: relative;
+  height: 280rpx;
+  top: -80rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  background-color: #fff;
+  border: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.my-header-concent-info {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+
+.my-header-concent-image {
+  width: 80rpx;
+  height: 80rpx;
+  border: 2rpx solid #FFDC60;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+
+.my-header-concent-separate {
+  border: 1rpx solid rgba(0, 0, 0, 0.05);
+  margin: 30rpx;
+}
+
+.my-concent {
+  position: relative;
+  top: 530rpx;
+}
+
+.my-concent-item {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.2);
+}
+
+.my-concent-item-text {
+  font-size: 32rpx;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.my-concent-item-image {
+  height: 48rpx;
+  width: 48rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}
+
+.my-concent-item-into {
+  height: 30rpx;
+  width: 40rpx;
+  margin-left: auto;
+  margin-right: 50rpx;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.my-concent-separate {
+  height: 30rpx;
+  background-color:rgba(0, 0, 0, 0.05);
+}
+
+.my-header-concent-count {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  justify-content: space-around;
+}
+
+.my-header-concent-item {
+  width: 160rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color:rgba(0, 0, 0, 0.8);
+}

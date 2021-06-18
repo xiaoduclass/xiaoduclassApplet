@@ -1,0 +1,80 @@
+<view class="my-header">
+  <image class="my-header-image" src="../../resources/my/my-header.jpg"></image>
+  <view class="my-header-concent">
+    <view class="my-header-concent-info">
+      <image class="my-header-concent-image" src=""></image>
+      <text class="my-header-concent-text">嗯哼嗯哼</text>
+    </view>
+    <view class="my-header-concent-separate"></view>
+    <view class="my-header-concent-count">
+      <view class="my-header-concent-item">
+        <view>2</view>
+        <view>记账天数</view>
+      </view>
+      <view class="my-header-concent-item">
+        <view>0</view>
+        <view>金币</view>
+      </view>
+      <view class="my-header-concent-item">
+        <view>0</view>
+        <view>积分</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="my-concent">
+  <view class="my-concent-separate"></view>
+  <view class="my-concent-item">
+    <image class="my-concent-item-image" src="../../resources/my/yuebao.png"></image>
+    <text class="my-concent-item-text">月报</text>
+    <image class="my-concent-item-into" src="../../resources/my/tiaozhuan.png" />
+
+  </view>
+  <view class="my-concent-item">
+    <image class="my-concent-item-image" src="../../resources/my/zhangdanditu.png"></image>
+    <text class="my-concent-item-text">账单地图</text>
+    <image class="my-concent-item-into" src="../../resources/my/tiaozhuan.png" />
+
+  </view>
+  <view class="my-concent-item">
+    <image class="my-concent-item-image" src="../../resources/my/shezhi.png"></image>
+    <text class="my-concent-item-text">设置</text>
+    <image class="my-concent-item-into" src="../../resources/my/tiaozhuan.png" />
+
+  </view>
+  <view class="my-concent-separate"></view>
+  <view class="my-concent-item">
+    <image class="my-concent-item-image" src="../../resources/my/weixintongzhi.png"></image>
+    <text class="my-concent-item-text">开启微信通知</text>
+    <image class="my-concent-item-into" src="../../resources/my/tiaozhuan.png" />
+
+  </view>
+  <view class="my-concent-item">
+    <image class="my-concent-item-image" src="../../resources/my/gexinghuashezhi.png"></image>
+    <text class="my-concent-item-text">个性化设置</text>
+    <image class="my-concent-item-into" src="../../resources/my/tiaozhuan.png" />
+
+  </view>
+  <view class="my-concent-item">
+    <image class="my-concent-item-image" src="../../resources/my/qiuhaoping.png"></image>
+    <text class="my-concent-item-text">求好评</text>
+    <image class="my-concent-item-into" src="../../resources/my/tiaozhuan.png" />
+
+  </view>
+  <view class="my-concent-item">
+    <image class="my-concent-item-image" src="../../resources/my/tuijiangeidajia.png"></image>
+    <text class="my-concent-item-text">推荐给大家</text>
+    <image class="my-concent-item-into" src="../../resources/my/tiaozhuan.png" />
+  </view>
+  <view class="my-concent-item">
+    <image class="my-concent-item-image" src="../../resources/my/yinshizhengcequan.png"></image>
+    <text class="my-concent-item-text">隐私权政策</text>
+    <image class="my-concent-item-into" src="../../resources/my/tiaozhuan.png" />
+  </view>
+  <view class="my-concent-item">
+    <image class="my-concent-item-image" src="../../resources/my/lianxiwomen.png"></image>
+    <text class="my-concent-item-text">联系我们 </text>
+    <image class="my-concent-item-into" src="../../resources/my/tiaozhuan.png" />
+
+  </view>
+</view>

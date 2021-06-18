@@ -1,0 +1,66 @@
+<!--pages/account/account.wxml-->
+<view class="header">
+  <view class="header-assets">
+    <view class="header-assets-net-assets">
+      <view>净资产</view>
+      <image bindtap="handleCourseTap" wx:if="{{ assetStatus }}" class="header-assets-image" src="../../resources/show.png"></image>
+      <image bindtap="handleCourseTap" wx:if="{{ !assetStatus }}" class="header-assets-image" src="../../resources/hide.png"></image>
+    </view>
+    <view class="header-assets-net-assets-analysis">
+      资产分析
+    </view>
+  </view>
+  <view class="header-number">
+   <text wx:if="{{ assetStatus }}">{{ netAssets }}</text>
+   <text wx:if="{{ !assetStatus }}">***</text>
+  </view>
+  <view class="header-liabilities">
+    <view>
+      <text>负债：</text>
+      <text wx:if="{{ assetStatus }}">{{ liabilities }}</text>
+      <text wx:if="{{ !assetStatus }}">***</text>
+    </view>
+    <view class="header-liabilities-total-assets">
+      <text>总资产：</text>
+      <text wx:if="{{ assetStatus }}">{{ totalAssets }}</text>
+      <text wx:if="{{ !assetStatus }}">***</text>
+    </view>
+  </view>
+</view>
+<!-- 账户 -->
+<view class="account">
+  <view class="account-my">我的账户（{{ accountItems.length }}）</view>
+  <view
+    wx:key="id"
+    wx:for="{{ accountItems }}"
+    wx:for-item="item"
+    data-id="{{ item.id }}"
+    bindtap="handleSelectItem"
+  >
+    <view class="account-items">
+      <image class="list-items-image" src="../../resources/bank/{{ item.accountCardCode }}.png" />
+      <view class="list-items-text">{{ item.accountName }}</view>
+      <view class="list-items-number">{{ item.accountBalance }}</view>
+    </view>
+  </view>
+  <view
+    class="account-add"
+    bindtap="handleAddAccount"
+  >
+    <text>+ 添加账户</text>
+  </view>
+</view>
+<!-- 借款 -->
+<view>
+  <view class="account-my">我的借款</view>
+  <view class="account-items">
+    <image class="list-items-image" src="/resources/借出.png" />
+    <view class="list-items-text">借出</view>
+    <view class="list-items-number">0.00</view>
+  </view>
+  <view class="account-items">
+    <image class="list-items-image" src="/resources/借入.png" />
+    <view class="list-items-text">借入</view>
+    <view class="list-items-number">0.00</view>
+  </view>
+</view>

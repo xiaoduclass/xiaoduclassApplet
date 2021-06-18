@@ -1,0 +1,47 @@
+<view>
+  <view class="index-header">
+    <image class="index-header-add" src="../../resources/xinjian.png"></image>
+    <image class="index-header-date" src="../../resources/riqi.png"></image>
+    <view bindtap="handleAccountBookType" class="index-header-tabs">{{ accountBookName }} ▼</view>
+    <image class="index-header-more" src="../../resources/gengduo.png"></image>
+  </view>
+  <view class="header">
+    <view class="header-budget">
+      <view>{{ budgetValue }}</view>
+    </view>
+    <view class="header-money">
+      <view class="header-money-group">
+        <text class="header-money-conent">0.00</text>
+        <text class="header-money-conent">4月支出</text>
+      </view>
+      <view class="header-money-group">
+        <text class="header-money-conent">0.00</text>
+        <text class="header-money-conent">4月支出</text>
+      </view>
+    </view>
+  </view>
+  <view class="list">
+    <view
+      wx:key="id"
+      wx:for="{{ accountBookItems }}"
+      wx:for-item="item"
+      data-id="{{ item.id }}"
+    >
+      <view class="list-title">
+        <view class="list-title-date">{{ item.date }}</view>
+        <view class="list-title-week">{{ item.week }}</view>
+        <view class="list-title-content">收入：{{ item.income }}；支出：{{ item.expenditure }}</view>
+      </view>
+      <view 
+          wx:key="accountBookId"
+          wx:for="{{ item.list }}"
+          wx:for-item="childItem"
+          data-id="{{ childItem.accountBookId }}"
+          bindtap="handleSelectItem" class="list-content">
+            <image class="list-content-image" src="" />
+            <view class="list-content-text">{{ childItem.accountBookName }}</view>
+            <view class="list-content-money">{{ childItem.accountBookValue }}</view>
+          </view>
+    </view>
+  </view>
+</view>

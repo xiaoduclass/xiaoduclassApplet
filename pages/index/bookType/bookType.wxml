@@ -1,0 +1,28 @@
+<view>
+  <view class="book-type">
+    <view
+      wx:key="{{ id }}"
+      wx:for="{{ accountTypeItems }}"
+      wx:for-item="item"
+      data-id="{{ item.id }}"
+      bindtap="handleSelectItem"
+      class="book-type-item">
+      {{ item.accountType }}
+        <view hidden="{{ selectAccountTypeId !== item.id }}" class="book-type-item-recommend"></view>
+    </view>
+  </view>
+  <view hidden="{{ selectAccountTypeId == 2 }}" class="book-type-description">流水账本邀请成员即可共享哦</view>
+  <view class="book-type-child">
+    <view
+      wx:key="{{ id }}"
+      wx:for="{{ selectAccountTypeItem }}"
+      wx:for-item="childItem"
+      data-id="{{ childItem.id }}"
+      bindtap="handleSelectChildItem"
+      class="book-type-child-items"
+    >
+      <image class="book-type-child-items-image" src=""></image>
+      <view class="book-type-child-items-text">{{ childItem.accountChildType }}</view>
+    </view>
+  </view>
+</view>

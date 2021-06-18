@@ -1,0 +1,49 @@
+<view>
+  <view>
+    <view class="book-view-title">
+      <image class="book-view-title-image" src=""></image>
+      <view class="book-view-title-text">餐饮费</view>
+      <view class="book-view-title-value">5.00</view>
+    </view>
+    <view class="book-view-item">
+      <image class="book-view-item-image" src="../../../resources/index/accountBookView/account.png"></image>
+      <view class="book-view-item-text">账户</view>
+      <view class="book-view-item-value">未选择</view>
+    </view>
+    <view class="book-view-item">
+      <image class="book-view-item-image" src="../../../resources/index/accountBookView/accountType.png"></image>
+      <view class="book-view-item-text">账户类型</view>
+      <view class="book-view-item-value">支出</view>
+    </view>
+    <view class="book-view-item">
+      <image class="book-view-item-image" src="../../../resources/index/accountBookView/user.png"></image>
+      <view class="book-view-item-text">记录人</view>
+      <view class="book-view-item-value">嗯哼嗯哼</view>
+    </view>
+    <view class="book-view-item">
+      <image class="book-view-item-image" src="../../../resources/index/accountBookView/date.png"></image>
+      <view class="book-view-item-text">时间</view>
+      <view class="book-view-item-value">2021.05.07 19:44</view>
+    </view>
+    <view class="book-view-item">
+      <image class="book-view-item-image" src="../../../resources/index/accountBookView/remark.png"></image>
+      <view class="book-view-item-text">备注</view>
+      <view class="book-view-item-value">备注1、备注2</view>
+    </view>
+  </view>
+  <view class="book-view-comment">
+    <view class="book-view-comment-title">成员评论</view>
+    <image class="book-view-comment-image" src="../../../resources/index/accountBookView/edit.png"></image>
+    <view class="book-view-comment-text">写评论</view>
+  </view>
+  <view class="book-view-comment-concent">
+    <view>想说就说，别控制~</view>
+  </view>
+  <view class="book-view-button">
+    <view bindtap="handleEditItem" class="book-view-button-edit">编辑</view>
+    <view bindtap="handleOpenDelete" class="book-view-button-delete">删除</view>
+  </view>
+  <mp-dialog title="删除" show="{{ deleteDialogShow }}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+      <view>您确认要删除吗？</view>
+  </mp-dialog>
+</view>

@@ -1,0 +1,36 @@
+page {
+  background-color:rgba(0, 0, 0, 0.05);
+}
+
+.account-loan-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.02);
+  background-color: #fff;
+}
+
+.account-loan-item-text {
+  width: 200rpx;
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+
+.account-loan-item-input {
+  height: 100rpx;
+  width: 100%;
+  text-align: right;
+  font-size: 30rpx;
+  margin-right: 30rpx;
+  line-height: 100rpx;
+}
+
+.account-loan-save {
+  position: fixed; 
+  bottom: 0;
+  background-color: #FFDC60;
+  text-align: center;
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  color: #fff;
+}

@@ -1,0 +1,51 @@
+page {
+  background-color:rgba(0, 0, 0, 0.05);
+}
+
+.account-header {
+  height: 240rpx;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+
+.account-header-image {
+  margin-top: 50rpx;
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.account-edit {
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.account-edit-text {
+  width: 200rpx;
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+
+.account-edit-input {
+  height: 100rpx;
+  width: 100%;
+  text-align: right;
+  font-size: 30rpx;
+  margin-right: 30rpx;
+}
+
+.account-save {
+  position: fixed; 
+  bottom: 0;
+  background-color: #FFDC60;
+  text-align: center;
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  color: #fff;
+}

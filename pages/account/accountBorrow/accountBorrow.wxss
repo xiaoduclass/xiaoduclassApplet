@@ -1,0 +1,81 @@
+.account-borrow-label {
+  height: 60rpx;
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.account-borrow-label-item {
+  padding: 6rpx;
+  border: 2rpx solid #FFDC60;
+  color: #FFDC60;
+}
+
+.account-borrow-total {
+  /*flex 布局*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  height: 200rpx;
+  text-align: center;
+  border-bottom: 20rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.account-borrow-total-number {
+  font-size: 44rpx;
+}
+
+.account-borrow-total-text {
+  font-size: 22rpx;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.account-borrow-items {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  height: 112rpx;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
+
+}
+
+.account-borrow--items-image {
+  margin-left: 30rpx;
+  height: 68rpx;
+  width: 68rpx;
+  border: 2rpx solid #FFDC60;
+  border-radius: 50%;
+}
+
+.account-borrow--items-description {
+  margin-left: 20rpx;
+}
+
+.account-borrow-items-overdue {
+  font-size: 20rpx;
+  color: #FFDC60;
+}
+
+.account-borrow--items-money {
+  margin-left: auto;
+  margin-right: 40rpx;
+}
+
+.account-borrow-items-received {
+  font-size: 20rpx;
+}
+
+.account-borrow-button {
+  position: fixed; 
+  bottom: 0;
+  background-color: #FFDC60;
+  text-align: center;
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  color: #fff;
+}

@@ -1,0 +1,56 @@
+<view class="book-add">
+  <!-- 类型、金额 -->
+  <view class="book-add-type-money">
+    <image class="book-add-type-money-image" src="" />
+      <view class="book-add-type-money-text">{{ model.accountType }}</view>
+      <view class="book-add-type-money-money">{{ model.accountValue }}</view>
+  </view>
+  <!-- 类型列表 -->
+  <view class="book-add-type-items">
+    <view 
+      wx:key="id"
+      wx:for="{{ accountBookTypeItems }}"
+      wx:for-item="item"
+      data-id="{{ item.id }}"
+      bindtap="handleSelectItem"
+      class="book-add-type-item"
+    >
+      <view>
+        <image class="book-add-type-item-image" src="" />
+        <view class="book-add-type-item-text">{{ item.accountBookType }}</view>
+      </view>
+    </view>
+  </view>
+  <view class="book-add-bottom">
+    <!-- 标签列表 -->
+    <view class="book-add-bottom-label"></view>
+    <!-- 日期、账户、备注 -->
+    <view class="book-add-bottom-date">
+      <image class="book-add-bottom-date-image" src="../../../resources/日期.png" />
+      <image class="book-add-bottom-account-image" src="../../../resources/index/accountBookAdd/remove.png" />
+      <view class="book-add-bottom-account-text">不选账户</view>
+      <view class="book-add-bottom-account-remark">{{ model.remark }}</view>
+    </view>
+    <!-- 计算器 -->
+    <view class="book-add-bottom-calculator">
+      <view class="book-add-bottom-calculator-items">
+        <view class="book-add-bottom-calculator-item">7</view>
+        <view class="book-add-bottom-calculator-item">8</view>
+        <view class="book-add-bottom-calculator-item">9</view>
+        <view class="book-add-bottom-calculator-item">退回</view>
+        <view class="book-add-bottom-calculator-item">4</view>
+        <view class="book-add-bottom-calculator-item">5</view>
+        <view class="book-add-bottom-calculator-item">6</view>
+        <view class="book-add-bottom-calculator-item">+</view>
+        <view class="book-add-bottom-calculator-item">1</view>
+        <view class="book-add-bottom-calculator-item">2</view>
+        <view class="book-add-bottom-calculator-item">3</view>
+        <view class="book-add-bottom-calculator-item">-</view>
+        <view class="book-add-bottom-calculator-item">￥</view>
+        <view class="book-add-bottom-calculator-item">0</view>
+        <view class="book-add-bottom-calculator-item">.</view>
+        <view class="book-add-bottom-calculator-item">完成</view>
+      </view>
+    </view>
+  </view>
+</view>

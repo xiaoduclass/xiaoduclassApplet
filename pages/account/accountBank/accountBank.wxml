@@ -1,0 +1,15 @@
+<!--pages/account/accountBank/accountBank.wxml-->
+<view class="account-bank">
+  <view
+    class="account-bank-item"
+    wx:key="id"
+    wx:for="{{ selectItems }}"
+    data-account-card-id="{{ item.dictCode }}"
+    data-account-card="{{ item.dictLabel }}"
+    data-account-card-code="{{ item.remark }}"
+    bindtap="handleSelectCard"
+  >
+    <image class="account-bank-item-image" src="../../../resources/bank/{{ item.remark }}.png"></image>
+    <text class="account-bank-item-text">{{ item.dictLabel }}</text>
+  </view>
+</view>

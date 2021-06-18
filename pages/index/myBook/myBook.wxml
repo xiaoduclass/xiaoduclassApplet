@@ -1,0 +1,27 @@
+<view class="my-book-header">
+  <image class="my-book-header-add" src=""></image>
+  <view class="my-book-header-text">我的账本（{{ accountBookItems.length }}）</view>
+  <image class="my-book-header-edit" src=""></image>
+</view>
+<view class="my-book-title">
+  <view class="my-book-title-text">所有账本</view>
+</view>
+<view
+  wx:key="id"
+  wx:for="{{ accountBookItems }}"
+  wx:for-item="item"
+  data-id="{{ item.id }}"
+  bindtap="handleSelectItem"
+  class="my-book-concent"
+  bindtap="handleSelectItem">
+  <image class="my-book-concent-image" src=""></image>
+  <view class="my-book-concent-name">
+    <view class="my-book-concent-name-text">{{ item.accountBook }}</view>
+    <view class="my-book-concent-name-type">{{ item.accountBookType }}</view>
+  </view>
+  <view class="my-book-concent-count">共有{{ item.accountBookCount }}比账单</view>
+</view>
+<view bindtap="handleBackHome" class="my-book-footer">
+  <image class="my-book-footer-image" src="../../../resources/index/myBook/back.png"></image>
+  <view>返回首页</view>
+</view>

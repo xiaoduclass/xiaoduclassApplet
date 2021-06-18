@@ -1,0 +1,136 @@
+/* pages/book/bookAdd/bookAdd.wxss */
+.book-add-type-money {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  height: 112rpx;
+  background-color: #FFF;
+  border-bottom: 4rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.book-add-type-money-image {
+  position: relative;
+  width: 68rpx;
+  height: 68rpx;
+  margin-left: 40rpx;
+  border: 2rpx solid #FFDC60;
+  border-radius: 50%;
+}
+
+
+.book-add-type-money-text {
+  position: relative;
+  margin-left: 40rpx;
+  font-size: 32rpx;
+}
+
+.book-add-type-money-money {
+  position: relative;
+  margin-left: auto;
+  margin-right: 40rpx;
+  font-size: 48rpx;
+}
+
+.book-add-type-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  height: 420rpx;
+  overflow-y:auto;
+}
+
+.book-add-type-item {
+  margin-top: 30rpx;
+  width: 148rpx;
+  text-align: center;
+}
+
+.book-add-type-item-image {
+  border: 1rpx solid #FFDC60;
+  border-radius: 50%;
+  height: 64rpx;
+  width: 64rpx;
+}
+
+.book-add-type-item-text {
+  font-size: 26rpx;
+}
+
+.book-add-bottom {
+  position: fixed; 
+  bottom: 0;
+  height: 640rpx;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.book-add-bottom-label {
+  height: 80rpx;
+  background-color: antiquewhite;
+}
+
+.book-add-bottom-date {
+  height: 80rpx;
+  background-color: antiquewhite;
+}
+
+.book-add-bottom-date {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  background-color: #FFF;
+  border-bottom: 4rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.book-add-bottom-date-image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 30rpx;
+}
+
+.book-add-bottom-account-image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 40rpx;
+}
+
+.book-add-bottom-account-text {
+  margin-left: 8rpx;
+  font-size: 30rpx;
+}
+
+.book-add-bottom-account-remark {
+  border: 2rpx solid #000;
+  border-radius: 24rpx;
+  font-size: 24rpx;
+  position: relative;
+  margin-left: auto;
+  margin-right: 30rpx;
+  padding: 4rpx 12rpx;
+}
+
+.book-add-bottom-calculator {
+  height: 480rpx;
+  background-color: #FFF;
+}
+
+.book-add-bottom-calculator-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  height: 480rpx;
+  overflow-y:auto;
+  background-color: #3f4150;
+  color: #fff;
+}
+
+.book-add-bottom-calculator-item {
+  box-sizing: border-box;
+  width: 25%;
+  height: 118rpx;
+  line-height: 118rpx;
+  text-align: center;
+  border: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+

@@ -1,0 +1,86 @@
+.my-book-header {
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-book-header-add  {
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.my-book-header-edit  {
+  height: 60rpx;
+  width: 60rpx;
+}
+
+
+.my-book-title {
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.my-book-title-text {
+  margin-left: 30rpx;
+  font-size: 20rpx;
+  letter-spacing: 2rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.my-book-concent {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  height: 130rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.05);
+}
+
+.my-book-concent-image {
+  margin-left: 40rpx;
+  height: 80rpx;
+  width: 64rpx;
+  border: 2rpx solid #FFDC60;
+}
+
+.my-book-concent-name {
+  margin-left: 30rpx;
+  letter-spacing: 2rpx;
+}
+
+.my-book-concent-count {
+  margin-right: 30rpx;
+  margin-left: auto;
+  margin-top: 50rpx;
+  font-size: 20rpx;
+  letter-spacing: 2rpx;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.my-book-concent-name-type {
+  font-size: 20rpx;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.my-book-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; 
+  bottom: 0;
+  height: 80rpx;
+  width: 100%;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #FFDC60;
+  color: #fff;
+  box-shadow:0px 0px  8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.my-book-footer-image {
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 10rpx;
+}

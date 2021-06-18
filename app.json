@@ -1,0 +1,53 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/account/account",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/account/accountEdit/accountEdit",
+    "pages/account/accountType/accoutType",
+    "pages/account/accountLoan/accountLoan",
+    "pages/account/accountBank/accountBank",
+    "pages/account/accountBorrow/accountBorrow",
+    "pages/index/bookView/bookView",
+    "pages/index/bookAdd/bookAdd",
+    "pages/account/accountBorrow/accountBorrowEdit/accountBorrowEdit",
+    "pages/index/myBook/myBook",
+    "pages/index/bookType/bookType"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFDC60",
+    "navigationBarTitleText": "小杜同学",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#BCBBBF",
+    "selectedColor": "#2B333B",
+    "list": [
+      {
+        "iconPath": "./resources/account.png",
+        "selectedIconPath": "./resources/account-active.png",
+        "pagePath": "pages/account/account",
+        "text": "账户"
+      },
+      {
+        "iconPath": "./resources/account-book.png",
+        "selectedIconPath": "./resources/add.png",
+        "pagePath": "pages/index/index",
+        "text": "账本"
+      },
+      {
+        "iconPath": "./resources/my.png",
+        "selectedIconPath": "./resources/my-active.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

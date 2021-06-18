@@ -1,0 +1,38 @@
+<!--pages/account/accountLoan/accountLoan.wxml-->
+<view class="account-loan">
+  <view class="account-loan-item">
+    <text class="account-loan-item-text">借出金额</text>
+    <input type="digit" class="account-loan-item-input" placeholder="借出金额"/>
+  </view>
+  <view class="account-loan-item">
+    <text class="account-loan-item-text">对方名称</text>
+    <input class="account-loan-item-input" placeholder="收到借款的人"/>
+  </view>
+  <view class="account-loan-item">
+    <text class="account-loan-item-text">借出账户</text>
+    <input class="account-loan-item-input" placeholder="请选择"/>
+  </view>
+  <view class="account-loan-item">
+    <text class="account-loan-item-text">借出日期</text>
+    <picker class="account-loan-item-input" mode="date" value="{{ accountLoanDate }}" start="2019-01-01" end="2023-12-31" bindchange="bindDateChange">
+      <view>
+        {{ accountLoanDate }}
+      </view>
+    </picker>
+  </view>
+  <view class="account-loan-item">
+    <text class="account-loan-item-text">收款日期</text>
+    <picker class="account-loan-item-input" mode="date" value="{{ accountLoanDate }}" start="2019-01-01" end="2023-12-31" bindchange="bindDateChange">
+      <view>
+        {{ accountLoanDate }}
+      </view>
+    </picker>
+  </view>
+  <view class="account-loan-item">
+    <text class="account-loan-item-text">备注</text>
+    <input type="digit" class="account-loan-item-input" placeholder="备注"/>
+  </view>
+  <view class="account-loan-save" bindtap="handleSaveAccountLoan">
+    <text>完成</text>
+  </view>
+</view>

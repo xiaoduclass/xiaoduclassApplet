@@ -1,0 +1,29 @@
+/* pages/account/accountType/accoutType.wxss */
+.account-type-title {
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.account-type-concent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.account-type-concent-item {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  width: 186rpx;
+  text-align: center;
+}
+
+.account-type-concent-item-image {
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.account-type-concent-item-text {
+  width: 186rpx;
+  font-size: 28rpx;
+}

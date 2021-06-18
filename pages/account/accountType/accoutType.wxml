@@ -1,0 +1,34 @@
+<!--pages/account/accountType/accoutType.wxml-->
+<view class="account-type">
+  <view class="account-type-title">资产</view>
+  <view class="account-type-concent">
+      <view
+        wx:key="id"
+        wx:for="{{ assetsItems }}"
+        data-id="{{ item.id }}"
+        data-text="{{ item.text }}"
+        bindtap="handleSelectType"
+      >
+        <view class="account-type-concent-item">
+          <image class="account-type-concent-item-image" src="../../../resources/assetsType/{{ item.code }}.png" />
+          <view class="account-type-concent-item-text">{{ item.text }}</view>
+        </view>
+    </view>
+  </view>
+</view>
+<view class="account-type">
+  <view class="account-type-title">投资</view>
+  <view class="account-type-concent">
+      <view
+        wx:key="id"
+        wx:for="{{ investmentItems }}"
+        data-id="{{ item.id }}"
+        bindtap="handleSelectType"
+      >
+        <view class="account-type-concent-item">
+        <image class="account-type-concent-item-image" src="../../../resources/assetsType/{{ item.code }}.png" />
+        <view class="account-type-concent-item-text">{{ item.text }}</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,100 @@
+page {
+  background-color:rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  background-color: #fff;
+  height: 220rpx;
+  width: 100%;
+}
+
+.header-assets {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+
+.header-assets-net-assets {
+  display: flex;
+}
+
+.header-assets-net-assets-analysis {
+  font-size: 26rpx;
+  color: #696969;
+}
+
+.header-assets-image {
+  margin-left: 20rpx;
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.header-number {
+  margin: 10rpx 30rpx;
+  font-size: 40rpx;
+}
+
+.header-liabilities {
+  display: flex;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-liabilities-total-assets {
+  margin-left: 100rpx;
+}
+
+.account-my {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.account-items {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  height: 100rpx;
+}
+
+.account-add {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #FFDC60;
+}
+
+.list-items-image {
+  position: relative;
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 30rpx;
+}
+
+.list-items-text {
+  margin-left: 40rpx;
+}
+
+.list-items-number {
+  margin-left: auto;
+  margin-right: 40rpx;
+}
